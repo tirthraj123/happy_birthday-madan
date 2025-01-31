@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css"><title>🎂 Happy Birthday 🎉</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="content">
+<h1 class="glow">🎉 Happy Birthday! 🎂</h1>
+
+<div class="popup">
+<img src="happy_birthday.png" alt="Happy Birthday">
+</div>
+<div class="popup">
+<img src="happy_birthday_text.png" alt="Happy Birthday to madan sir">
+</div>
+</div>
+
+<audio id="birthdaySong" src="happy_birthday.mp3"></audio>
+
+<script>
+window.onload = function () {
+document.querySelector(".popup").style.transform = "scale(1)";
+let audio = document.getElementById("birthdaySong");
+audio.play().catch(error => console.log("Autoplay blocked by browser:", error));
+};
+</script>
+<link rel="stylesheet" href="styles.css">
+</body>
+</html>
